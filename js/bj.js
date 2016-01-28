@@ -1,84 +1,73 @@
-var dilerHand = [];
+var dealerHand = [];
 var playerHand = [];
 var deck = makeDeck();
 
 function doNewGame() {
-	dilerHand = [];
+	dealerHand = [];
 	playerHand = [];
-	/*$("#diler1").empty(); 
-	$("#diler2").empty();
-	$("#player1").empty();
-	$("#player2").empty();
-	$("#player3").empty();
-	$("#player4").empty();
-	$("#player5").empty();
-	$("#player6").empty();*/
-
-	doNewGameDiler();
-	doNewGamePlayer();
-}
-
-function doNewGamePlayer() {
-
-	function player1() {
-		var cardIndex = Math.floor(Math.random() * deck.length);
-		playerHand.push(deck[cardIndex]);
-		deck.splice(cardIndex, 1);
-		return document.getElementById("player1").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-	}
-	function player2() {
-		var cardIndex = Math.floor(Math.random() * deck.length);
-		playerHand.push(deck[cardIndex]);
-		deck.splice(cardIndex, 1);
-		return document.getElementById("player2").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-	}
-	function player3() {
-		var cardIndex = Math.floor(Math.random() * deck.length);
-		playerHand.push(deck[cardIndex]);
-		deck.splice(cardIndex, 1);
-		return document.getElementById("player3").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-	}
-	return player1() + player2() + player3();
-}
-
-function doNewGameDiler() {
-	function diler1() {
-		var cardIndex = Math.floor(Math.random() * deck.length);
-		dilerHand.push(deck[cardIndex], deck[cardIndex]);
-		deck.splice(cardIndex, 1);
-		return document.getElementById("diler1").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-	}
-	function diler2() {
-		var cardIndex = Math.floor(Math.random() * deck.length);
-		dilerHand.push(deck[cardIndex], deck[cardIndex]);
-		deck.splice(cardIndex, 1);
-		return document.getElementById("diler2").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-	}
-	return diler1() + diler2();
-}
+	deck = makeDeck();
 	
+	for (var i = 1; i <= 6; i++) {
+		document.getElementById("dealer" + i).innerHTML = "";
+		document.getElementById("player" + i).innerHTML = "";
+	}
 
+	addCardToHand(playerHand, "player");
+	addCardToHand(playerHand, "player");
+	addCardToHand(dealerHand, "dealer");
+	count("countplayer", playerHand);
+	count("countdealer", dealerHand);
+	result();
+
+	if ((getSum(playerHand) >= 21) || (getSum(dealerHand) >= 21)) {
+
+	}
+}
 
 function doMore() {
-	if (playerHand.length < 6) {
-		var cardIndex = Math.floor(Math.random() * deck.length);
-		playerHand.push(deck[cardIndex]);
-		if (playerHand.length == 4) {
-			return document.getElementById("player4").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-		} else if (playerHand.length == 5) {
-			return document.getElementById("player5").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-		} else {
-			return document.getElementById("player6").innerHTML = "<img src = \"" + getCardFileName(deck[cardIndex]) + "\">";
-		}
-	} else {
-		alert("Лимит карт исчерпан. Начни новую игру!");
-	}
-	
-	
+	if ((playerHand.length < 6) && (playerHand.length > 1) && (getSum(playerHand) < 21) && (getSum(dealerHand) < 17)) {
+		addCardToHand(playerHand, "player");
+		count("countplayer", playerHand);
+		result();
+	} 
 }
 
 function doStop() {
-	alert("doStop");
+	if ((playerHand.length < 6) && (playerHand.length > 1) && (getSum(playerHand) < 21)) {
+		while (getSum(dealerHand) < 17) {
+			addCardToHand(dealerHand, "dealer");
+		}
+
+		if (getSum(dealerHand) == 21) {
+			document.getElementById("game").innerHTML = ":( Сожалеем, у дилера Black Jack.";
+		} else if (getSum(dealerHand) > 21) {
+			document.getElementById("game").innerHTML = ":) У дилера перебор!";
+		} else if (getSum(playerHand) == getSum(dealerHand)) {
+			document.getElementById("game").innerHTML = "Ничья.";
+		} else if (getSum(playerHand) > getSum(dealerHand)) {
+			document.getElementById("game").innerHTML = "Поздравляем, Вы выиграли!";
+		} else {
+			document.getElementById("game").innerHTML = ":( Вы проиграли...";
+		}
+
+		count("countdealer", dealerHand);
+	}
+}
+	
+		
+function count(idName, handName) {
+	document.getElementById(idName).innerHTML = "\" "+ getSum(handName) + "\" ";
+}
+
+function result() {
+	var countplayer = getSum(playerHand);
+	if (countplayer == 21) {
+		document.getElementById("game").innerHTML = "Вы выиграли!";
+	} else if (countplayer > 21) {
+		document.getElementById("game").innerHTML = "Перебор!";
+	} else {
+		document.getElementById("game").innerHTML = " ";	
+	}
 }
 
 //---------------------------------------------------------------------------------
@@ -95,28 +84,60 @@ function makeDeck() {
 	return deck;
 }
 
+function takeCard(deck) {
+	var cardIndex = Math.floor(Math.random() * deck.length);
+	var card = deck[cardIndex];
+	deck.splice(cardIndex, 1);
+	return card;
+}
+
+function addCardToHand(hand, handName) {
+	var card = takeCard(deck);
+	hand.push(card);
+	setImage(handName + hand.length, getCardFileName(card));
+}
 
 function getCardFileName(card) {
-	return "pictures/cards-" + getCardDenomination(card) + "-" + getCardSuit(card) + ".png";
+	var denominations = ["A", "6", "7", "8", "9", "10", "J", "Q", "K"];
+	var denominationNames = ["00", "02", "03", "04", "05", "06", "07", "08", "09"];
+	var denominationIndex = denominations.indexOf(getCardDenomination(card))
+	var denominationName = denominationNames[denominationIndex];
+
+	var suitName = "0" + (parseInt(getCardSuit(card)) - 1);
+
+	return "pictures/cards-" + denominationName + "-" + suitName + ".png";
 }
 
 
 function getCardDenomination(card) {
-	var denominations = ["A", "6", "7", "8", "9", "10", "J", "Q", "K"];
-	var denominationNames = ["00", "02", "03", "04", "05", "06", "07", "08", "09"];
-	var cardDenomination = card.split(".");
-	var index = denominations.indexOf(cardDenomination[0]);
-	return denominationNames[index];
+	return card.split(".")[0];
 }
 
 function getCardSuit(card) {
-	var suit = ["1", "2", "3", "4"];
-	var suitNames = ["00", "02", "03", "04"];
-	var cardSuit = card.split(".");
-	return "0" + (parseInt(cardSuit[1]) - 1);
+	return card.split(".")[1];
 }
 
+function setImage(idName, fileName) {
+	document.getElementById(idName).innerHTML = "<img src = \"" + fileName + "\">";
+}
 
+function getSum(hand) {
+	var sum = 0;
+
+	for (var i = 0; i < hand.length; i++) {
+		var denomination = getCardDenomination(hand[i]);
+		
+		if (denomination == "J" || denomination == "Q" || denomination == "K") {
+			sum += 10;
+		} else if (denomination == "A") {
+			sum += (sum + 11 > 21) ? 1 : 11;
+		} else {
+			sum += parseInt(denomination);
+		}		
+	}
+
+	return sum;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -130,24 +151,7 @@ function getCard() {
 	return cards[getRandomInt(0, cards.length - 1)];
 }
 
-function getSum(arr) {
-	var sum = 0;
-	for (var i = 0; i < arr.length; i++) {
-		if (arr[i] == "J" || arr[i] == "Q" || arr[i] == "K") {
-			sum += 10;
-		} else if (arr[i] == "A") {
-			sum += (sum + 11 > 21) ? 1 : 11;
-			/*if (sum + 11 > 21) {
-				sum += 1;
-			} else {
-				sum += 11;
-			}*/
-		} else {
-			sum += parseInt(arr[i]);
-		}
-	}
-	return sum;
-}
+
 
 function getStatus() {
 	return "Дилер: " + dealer.join(", ") + ". Игрок: " + player.join(", ") + ".";
