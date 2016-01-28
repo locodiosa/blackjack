@@ -209,9 +209,16 @@ img {
 }
 
 	
-#bender {
-	position: fixed;
-	bottom: -84%;
-	right: 0;
-
-}
+ #bender {
+    bottom:-60%; right: 0;
+   
+     position: fixed; /* Абсолютное позиционирование */
+    
+     
+     /* Переход */
+     -webkit-transition: bottom 1s ease-out 0.5s;
+     -moz-transition: bottom 1s ease-out 0.5s;
+     -o-transition: bottom 1s ease-out 0.5s;
+     transition: bottom 1s ease-out 0.5s;
+    }
+   #bender:hover {bottom: 0; }
