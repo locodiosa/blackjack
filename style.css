@@ -1,0 +1,220 @@
+body, html {
+	background-color: #005000;
+	margin:0px;
+	padding:0px;
+	height: 100%
+}
+
+/*div {
+	border: 1px solid #000;
+}*/
+
+img {
+	max-width: 100%
+}
+
+#container {
+	margin: 10px auto;
+	width:90%; /*900px*/
+	height: 95%
+}
+
+#manage {
+	width: 14%; /*130px*/
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+#board {
+	width: 84%;
+	height: 100%;
+	float: right;
+	position: relative
+}
+
+#newgame {
+	background-color:#dddd00; 
+	width:77%;
+	height: 7%
+}
+
+#more {
+	background-color:#5555aa; 
+	width:58%;
+	height: 5%;
+	position: absolute;
+	top: 65%
+}
+
+#stop {
+	background-color:#800000; 
+	width:58%;
+	height: 5%;
+	position: absolute;
+	top: 75%;
+}
+
+#deck {
+	width:58%;
+	position: absolute;
+	top:40%;
+	/*position: relative;*/
+}
+/* #deck:before{
+	content: "";
+	display: block;
+	padding-top: 150%; 	
+}*/
+
+/*.content{
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+} */
+
+
+
+#diler1 {
+	width: 10%;
+	position: absolute;
+	top: 10%;
+	left: 0;
+}
+
+#diler2 {
+	width: 10%;
+	position: absolute;
+	top: 10%;
+	left: 11%;
+}
+
+#diler3 {
+	width: 10%;
+	position: absolute;
+	top: 10%;
+	left: 22%;
+}
+
+#diler4 {
+	width: 10%;
+	position: absolute;
+	top: 10%;
+	left: 33%;
+}
+
+#diler5 {
+	width: 10%;
+	position: absolute;
+	top: 10%;
+	left: 44%;
+}
+
+#diler6 {
+	width: 10%;
+	position: absolute;
+	top: 10%;
+	left: 55%;
+}
+
+#countdiler {
+	width: 25%;
+	height: 4%;
+	position: absolute;
+	top: 15%;
+	right: 0;
+}
+
+#game{
+	width: 50%;
+	height: 5%;
+	position: absolute;
+	top: 48%;
+	left: 0;
+}
+
+#player1{
+	width: 10%;
+	position: absolute;
+	top: 70%;
+	left: 0;
+}
+
+#player2{
+	width: 10%;
+	position: absolute;
+	top: 70%;
+	left: 11%;
+}
+
+#player3{
+	width: 10%;
+	position: absolute;
+	top: 70%;
+	left: 22%;
+}
+
+#player4{
+	width: 10%;
+	position: absolute;
+	top: 70%;
+	left: 33%;
+}
+
+#player5{
+	width: 10%;
+	position: absolute;
+	top: 70%;
+	left: 44%;
+}
+
+#player6{
+	width: 10%;
+	position: absolute;
+	top: 70%;
+	left: 55%;
+}
+
+#countplayer{
+	width: 25%;
+	height: 4%;
+	position: absolute;
+	top: 80%;
+	right: 0;
+	/*float: right;
+	margin-top: -7%*/
+}
+
+  
+   #bar {
+    bottom:-60%; right: 0;
+   
+     position: fixed; /* Абсолютное позиционирование */
+    
+     
+     /* Переход */
+     -webkit-transition: bottom 1s ease-out 0.5s;
+     -moz-transition: bottom 1s ease-out 0.5s;
+     -o-transition: bottom 1s ease-out 0.5s;
+     transition: bottom 1s ease-out 0.5s;
+    }
+   #bar:hover {bottom: 0; }
+  
+ /* #bar {
+    top:-5.5em; right:5em; /* Положение 
+     padding: .5em; /* Поля 
+     margin: 0; /* Отступы 
+     position: absolute; /* Абсолютное позиционирование 
+     width: 2em; /* Ширина 
+     background: #333; /* Цвет фона 
+     color: #fff; /* Цвет текста 
+     text-align: center; /* Выравнивание по центру */
+     /* Переход 
+     -webkit-transition: top 1s ease-out 0.5s;
+     -moz-transition: top 1s ease-out 0.5s;
+     -o-transition: top 1s ease-out 0.5s;
+     transition: top 1s ease-out 0.5s;
+    }
+   #bar:hover { top: 0; }*/
