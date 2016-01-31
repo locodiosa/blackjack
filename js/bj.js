@@ -39,15 +39,15 @@ function doStop() {
 		}
 
 		if (getSum(dealerHand) == 21) {
-			document.getElementById("game").innerHTML = ":( Сожалеем, у дилера Black Jack.";
+			document.getElementById("game").innerHTML = "Сожалеем, у дилера Black Jack.  :( ";
 		} else if (getSum(dealerHand) > 21) {
-			document.getElementById("game").innerHTML = ":) У дилера перебор!";
+			document.getElementById("game").innerHTML = "У дилера перебор!  :D";
 		} else if (getSum(playerHand) == getSum(dealerHand)) {
 			document.getElementById("game").innerHTML = "Ничья.";
 		} else if (getSum(playerHand) > getSum(dealerHand)) {
-			document.getElementById("game").innerHTML = "Поздравляем, Вы выиграли!";
+			document.getElementById("game").innerHTML = "Поздравляем, Вы выиграли!  :)";
 		} else {
-			document.getElementById("game").innerHTML = ":( Вы проиграли...";
+			document.getElementById("game").innerHTML = "Вы проиграли...  :( ";
 		}
 
 		count("countdealer", dealerHand);
@@ -62,9 +62,9 @@ function count(idName, handName) {
 function result() {
 	var countplayer = getSum(playerHand);
 	if (countplayer == 21) {
-		document.getElementById("game").innerHTML = "Вы выиграли!";
+		document.getElementById("game").innerHTML = "У Вас Black Jack!  :D";
 	} else if (countplayer > 21) {
-		document.getElementById("game").innerHTML = "Перебор!";
+		document.getElementById("game").innerHTML = "Перебор! :(";
 	} else {
 		document.getElementById("game").innerHTML = " ";	
 	}

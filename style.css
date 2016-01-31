@@ -31,10 +31,10 @@ img {
 #game{
 	width: 50%;
 	height: 5%;
-	font-size: 120%;
+	font-size: 1.2em;
 	color: #ffff00;
 	position: absolute;
-	top: 48%;
+	top: 50%;
 	left: 45%;
 }
 
@@ -220,5 +220,5 @@ img {
 }
 
 #bender:hover {
-	bottom: 0; 
+	bottom: 0;
 }
