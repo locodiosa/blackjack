@@ -123,6 +123,7 @@ function setImage(idName, fileName) {
 
 function getSum(hand) {
 	var sum = 0;
+	var aces = 0;
 
 	for (var i = 0; i < hand.length; i++) {
 		var denomination = getCardDenomination(hand[i]);
@@ -130,10 +131,15 @@ function getSum(hand) {
 		if (denomination == "J" || denomination == "Q" || denomination == "K") {
 			sum += 10;
 		} else if (denomination == "A") {
-			sum += (sum + 11 > 21) ? 1 : 11;
+			aces++; 
 		} else {
 			sum += parseInt(denomination);
 		}		
+	}
+
+	if (aces != 0) {
+		sum += aces - 1;
+		sum += (sum + 11 > 21) ? 1 : 11;
 	}
 
 	return sum;
