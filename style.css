@@ -1,7 +1,7 @@
 body, html {
 	background-color: #005000;
 	color: #ddd;
-	font: 100% Verdana;
+	font: 3vmin Verdana;
 	margin:0px;
 	padding:0px;
 	height: 100%
@@ -31,7 +31,7 @@ img {
 #game{
 	width: 50%;
 	height: 5%;
-	font-size: 1.2em;
+	font-size: 1rem;
 	color: #ffff00;
 	position: absolute;
 	top: 50%;
@@ -48,6 +48,7 @@ img {
 	top: 47%;
 	left: 15%;
 	cursor: pointer;
+	font-size: 0.9em;
 }
 
 #more {
@@ -58,6 +59,7 @@ img {
 	top: 45%;
 	left: 30%;
 	cursor: pointer;
+	font-size: 0.9em;
 }
 
 #stop {
@@ -68,6 +70,7 @@ img {
 	top: 55%;
 	left: 30%;
 	cursor: pointer;
+	font-size: 0.9em;
 }
 
 .text {
