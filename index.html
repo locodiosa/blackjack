@@ -6,10 +6,10 @@
 <link rel="stylesheet" href="style.css" type="text/css">
 <script src="js/bj.js"></script>
 </head>
-<body>
+<body onload="doNewGame()">
 	<div id="container">
 		<div id="newgame" onclick="doNewGame()"> <div class="text"><p>НОВАЯ ИГРА</p></div> </div>
-		<div id="deck"> <img src="pictures/back.jpg"> </div>
+		<div id="deck" onclick="doMore()"> <img src="pictures/back.jpg"> </div>
 		<div id="dealerName"> ДИЛЕР: </div>
 		<div id="countdealer"></div>
 		<div id="dealer1"></div>
@@ -27,7 +27,7 @@
 		<div id="player5"></div>
 		<div id="player6"></div>
 		<div id="game"></div>
-		<div id="more" onclick="doMore()"> <div class="text"><p>ЕЩЁ</p></div> </div>
+		<!--<div id="more" onclick="doMore()"> <div class="text"><p>ЕЩЁ</p></div> </div>-->
 		<div id="stop" onclick="doStop()"> <div class="text"><p>ХВАТИТ</p></div> </div>
 		<div id="bender"><img src="pictures/bender.gif"> </div>
 </div>

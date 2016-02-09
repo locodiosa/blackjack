@@ -26,6 +26,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 40%;
+	cursor: pointer;
 }
 
 #game{
