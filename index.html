@@ -12,8 +12,11 @@
 	<div id="container">
 		
 		<div id="dealerArea">
-			<div id="dealerName"> ДИЛЕР: </div>
-			<div id="countdealer"></div>
+			<div class="score">
+				<div class="scoreItem"> ДИЛЕР: </div>
+				<div id="countdealer" class="scoreItem"></div>
+			</div>
+
 			<div id="dealer1"></div>
 			<div id="dealer2"></div>
 			<div id="dealer3"></div>
@@ -23,8 +26,8 @@
 		</div>
 
 		<div id="playerArea">
-			<div id="playerName"> ИГРОК: </div>	
-			<div id="countplayer"></div>		
+			<div id="playerName" class="text"> ИГРОК: </div>
+			<div id="countplayer" class="text"></div>
 			<div id="player1"></div>
 			<div id="player2"></div>
 			<div id="player3"></div>
@@ -33,13 +36,13 @@
 			<div id="player6"></div>
 		</div>
 
-		<div id="newgame" onclick="doNewGame()"> <div class="text"><p>НОВАЯ ИГРА</p></div> </div>
+		<div id="newgame" class="text" onclick="doNewGame()"><p>НОВАЯ ИГРА</p></div>
 		<div id="deck" onclick="doMore()"> <img src="pictures/back.jpg"> </div>
 		
 		
 		<div id="game"></div>
-		<!--<div id="more" onclick="doMore()"> <div class="text"><p>ЕЩЁ</p></div> </div>-->
-		<div id="stop" onclick="doStop()"> <div class="text"><p>ХВАТИТ</p></div> </div>
+		<!--<div id="more" class="text" onclick="doMore()"><p>ЕЩЁ</p></div>-->
+		<div id="stop" class="text" onclick="doStop()"><p>ХВАТИТ</p></div>
 		<div id="bender"><img src="pictures/bender.gif"> </div>
 </div>
 </body>
