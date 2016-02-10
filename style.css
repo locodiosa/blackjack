@@ -103,32 +103,34 @@ img {
 }
 
 /*------------------------------------------Надписи----------------------------------------------*/
-
-#dealerName {
-	width: 8%;
-	height: 4%;
+.score {
+	width: 15%;
+	height: 13%;
 	position: absolute;
 	top: 50%;
 }
+
+.scoreItem {
+	display: inline;
+	vertical-align: top;
+	float: left;
+	height: 100%;
+}
+
+/*#dealerName {
+	width: 70%;	
+}*/
 
 #playerName {
 	width: 8%;
-	height: 4%;
+	height: 13%;
 	position: absolute;
 	top: 50%;
-}
-
-#countdealer {
-	width: 8%;
-	height: 4%;
-	position: absolute;
-	top: 50%;
-	left: 9%;
 }
 
 #countplayer{
-	width: 8%;
-	height: 4%;
+	width: 5%;
+	height: 14%;
 	position: absolute;
 	top: 50%;
 	left: 9%;

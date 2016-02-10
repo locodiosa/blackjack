@@ -56,7 +56,7 @@ function doStop() {
 	
 		
 function count(idName, handName) {
-	document.getElementById(idName).innerHTML = "\" "+ getSum(handName) + "\" ";
+	document.getElementById(idName).innerHTML = "\"" + getSum(handName) + "\"";
 }
 
 function result() {
