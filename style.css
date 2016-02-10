@@ -22,6 +22,22 @@ img {
 	position: relative;
 }
 
+#dealerArea {
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	left: 10%;
+	top: 1%;
+}
+
+#playerArea {
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	left: 10%;
+	bottom: 1%;
+}
+
 #deck {
 	width: 10%;
 	position: absolute;
@@ -92,32 +108,30 @@ img {
 	width: 8%;
 	height: 4%;
 	position: absolute;
-	top: 20%;
-	left: 10%;
+	top: 50%;
 }
 
 #playerName {
 	width: 8%;
 	height: 4%;
 	position: absolute;
-	top: 80%;
-	left: 10%;
+	top: 50%;
 }
 
 #countdealer {
 	width: 8%;
 	height: 4%;
 	position: absolute;
-	top: 20%;
-	left: 19%;
+	top: 50%;
+	left: 9%;
 }
 
 #countplayer{
 	width: 8%;
 	height: 4%;
 	position: absolute;
-	top: 80%;
-	left: 19%;
+	top: 50%;
+	left: 9%;
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
@@ -126,7 +140,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 10%;
-	left: 25%;
+	left: 15%;
 	z-index: 1;
 }
 
@@ -134,7 +148,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 10%;
-	left: 30%;
+	left: 20%;
 	z-index: 2;
 }
 
@@ -142,7 +156,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 10%;
-	left: 35%;
+	left: 25%;
 	z-index: 3;
 }
 
@@ -150,7 +164,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 10%;
-	left: 40%;
+	left: 30%;
 	z-index: 4;
 }
 
@@ -158,7 +172,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 10%;
-	left: 45%;
+	left: 35%;
 	z-index: 5;
 }
 
@@ -166,7 +180,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 10%;
-	left: 50%;
+	left: 40%;
 	z-index: 6;
 }
 
@@ -174,7 +188,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 70%;
-	left: 25%;
+	left: 15%;
 	z-index: 1;
 }
 
@@ -182,7 +196,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 70%;
-	left: 30%;
+	left: 20%;
 	z-index: 2;
 }
 
@@ -190,7 +204,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 70%;
-	left: 35%;
+	left: 25%;
 	z-index: 3;
 }
 
@@ -198,7 +212,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 70%;
-	left: 40%;
+	left: 30%;
 	z-index: 4;
 }
 
@@ -206,7 +220,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 70%;
-	left: 45%;
+	left: 35%;
 	z-index: 5;
 }
 
@@ -214,7 +228,7 @@ img {
 	width: 10%;
 	position: absolute;
 	top: 70%;
-	left: 50%;
+	left: 40%;
 	z-index: 6;
 }
 
