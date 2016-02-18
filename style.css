@@ -129,46 +129,54 @@ img {
 	height: 100%;
 } 
 
-#dealer1 {
-	width: 15%;
-	z-index: 1;
-	display: table-cell; 
+#dealerMiddle {
+	display: table-cell;
 	vertical-align: middle; 
+	width: 100%;
+}
+
+#dealer1 {
+	display: inline-block;
+    vertical-align: middle;
+	width: 15%;
+	position: absolute;
+	left: 15%;
+	z-index: 1;
 }
 
 #dealer2 {
 	width: 15%;
+	position: absolute;
+	left: 20%;
 	z-index: 2;
-	display: table-cell; 
-	vertical-align: middle; 
 }
 
 #dealer3 {
 	width: 15%;
+	position: absolute;
+	left: 25%;
 	z-index: 3;
-	display: table-cell; 
-	vertical-align: middle; 
 }
 
 #dealer4 {
 	width: 15%;
+	position: absolute;
+	left: 30%;
 	z-index: 4;
-	display: table-cell; 
-	vertical-align: middle; 
 }
 
 #dealer5 {
 	width: 15%;
+	position: absolute;
+	left: 35%;
 	z-index: 5;
-	display: table-cell; 
-	vertical-align: middle; 
 }
 
 #dealer6 {
 	width: 15%;
+	position: absolute;
+	left: 20%;
 	z-index: 6;
-	display: table-cell; 
-	vertical-align: middle; 
 }
 
 #player1{
