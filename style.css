@@ -122,60 +122,52 @@ img {
 /*--------------------------------------------Карты--------------------------------------------------*/
 
 #dealer {
-	display: table;
 	position: absolute;
 	left: 15%;
 	width: 85%;
 	height: 100%;
 } 
 
-#dealerMiddle {
-	display: table-cell;
-	vertical-align: middle; 
-	width: 100%;
-}
-
 #dealer1 {
-	display: inline-block;
-    vertical-align: middle;
 	width: 15%;
 	position: absolute;
-	left: 15%;
+	top: 20%;
+	bottom: 20%;
 	z-index: 1;
 }
 
 #dealer2 {
 	width: 15%;
 	position: absolute;
-	left: 20%;
+	left: 5%;
 	z-index: 2;
 }
 
 #dealer3 {
 	width: 15%;
 	position: absolute;
-	left: 25%;
+	left: 10%;
 	z-index: 3;
 }
 
 #dealer4 {
 	width: 15%;
 	position: absolute;
-	left: 30%;
+	left: 15%;
 	z-index: 4;
 }
 
 #dealer5 {
 	width: 15%;
 	position: absolute;
-	left: 35%;
+	left: 20%;
 	z-index: 5;
 }
 
 #dealer6 {
 	width: 15%;
 	position: absolute;
-	left: 20%;
+	left: 25%;
 	z-index: 6;
 }
 
