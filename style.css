@@ -15,27 +15,18 @@ img {
 	width: 100%;
 }
 
-#container {
-	margin: 1% auto;
-	width:95%; /*900px*/
-	height: 95%;	
-	position: relative;
-}
-
 #dealerArea {
-	height: 30%;
+	width: 85%;
 	position: absolute;
-	left: 10%;
-	right: 1%;
-	top: 1%;
+	left: 15%;
+	top: 5%;
 }
 
 #playerArea {
-	height: 30%;
+	width: 85%;
 	position: absolute;
-	left: 10%;
-	right: 1%;
-	top: 69%;
+	left: 15%;
+	top: 65%;
 }
 
 #deck {
@@ -106,10 +97,8 @@ img {
 /*------------------------------------------Надписи----------------------------------------------*/
 .score {
 	width: 15%;
-	height: 13%;
 	position: absolute;
 	top: 50%;
-	/*margin: -1% 0 0 0;*/
 }
 
 .scoreItem {
@@ -121,106 +110,98 @@ img {
 
 /*--------------------------------------------Карты--------------------------------------------------*/
 
-#dealer {
-	position: absolute;
-	left: 15%;
-	width: 85%;
-	height: 100%;
-} 
-
 #dealer1 {
 	width: 15%;
 	position: absolute;
-	top: 20%;
-	bottom: 20%;
+	left: 20%;
 	z-index: 1;
 }
 
 #dealer2 {
 	width: 15%;
 	position: absolute;
-	left: 5%;
+	left: 25%;
 	z-index: 2;
 }
 
 #dealer3 {
 	width: 15%;
 	position: absolute;
-	left: 10%;
+	left: 30%;
 	z-index: 3;
 }
 
 #dealer4 {
 	width: 15%;
 	position: absolute;
-	left: 15%;
+	left: 35%;
 	z-index: 4;
 }
 
 #dealer5 {
 	width: 15%;
 	position: absolute;
-	left: 20%;
+	left: 40%;
 	z-index: 5;
 }
 
 #dealer6 {
 	width: 15%;
 	position: absolute;
-	left: 25%;
+	left: 45%;
 	z-index: 6;
 }
 
 #player1{
-	width: 10%;
+	width: 15%;
 	position: absolute;
 	top: 10%;
-	left: 15%;
+	left: 20%;
 	z-index: 1;
 }
 
 #player2{
-	width: 10%;
+	width: 15%;
 	position: absolute;
 	top: 10%;
-	left: 20%;
+	left: 25%;
 	z-index: 2;
 }
 
 #player3{
-	width: 10%;
+	width: 15%;
 	position: absolute;
 	top: 70%;
-	left: 25%;
+	left: 30%;
 	z-index: 3;
 }
 
 #player4{
-	width: 10%;
+	width: 15%;
 	position: absolute;
 	top: 70%;
-	left: 30%;
+	left: 35%;
 	z-index: 4;
 }
 
 #player5{
-	width: 10%;
+	width: 15%;
 	position: absolute;
 	top: 70%;
-	left: 35%;
+	left: 40%;
 	z-index: 5;
 }
 
 #player6{
-	width: 10%;
+	width: 15%;
 	position: absolute;
 	top: 70%;
-	left: 40%;
+	left: 45%;
 	z-index: 6;
 }
 
 	
-#bender {
+/*#bender {
 	bottom:-40%; right: 0;
 	position: fixed; 
 	width: 30%;
@@ -232,6 +213,6 @@ img {
 
 #bender:hover {
 	bottom: 0;
-}
+}*/
 
 
