@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="container">
-		
+		<div id="deckArea"> <div id="deck"> <img src="pictures/back.jpg"> </div> </div>
 		<div id="dealerArea">
 			<div class="score">
 				<div class="scoreItem"> ДИЛЕР: </div>
@@ -21,6 +21,13 @@
 			<div id="dealer4"></div>
 			<div id="dealer5"></div>
 			<div id="dealer6"></div>
+		</div>
+
+		<div id="gameArea"> 
+			<div id="newgame" onclick="doNewGame()"> <div class="text"><p>НОВАЯ ИГРА</p></div> </div>
+			<div id="game"></div>
+			<div id="more" onclick="doMore()"> <div class="text"><p>ЕЩЁ</p></div> </div>
+			<div id="stop" onclick="doStop()"> <div class="text"><p>ХВАТИТ</p></div> </div> 
 		</div>
 
 		<div id="playerArea">
@@ -37,11 +44,7 @@
 		</div>
 
 
-		<div id="newgame" onclick="doNewGame()"> <div class="text"><p>НОВАЯ ИГРА</p></div> </div>
-		<div id="deck"> <img src="pictures/back.jpg"> </div>
-		<div id="game"></div>
-		<div id="more" onclick="doMore()"> <div class="text"><p>ЕЩЁ</p></div> </div>
-		<div id="stop" onclick="doStop()"> <div class="text"><p>ХВАТИТ</p></div> </div>
+		
 
 		
 		<div id="bender"><img src="pictures/bender.gif"> </div>
