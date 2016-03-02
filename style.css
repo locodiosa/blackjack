@@ -18,7 +18,7 @@ img {
 #container {
 	margin: 10px auto;
 	width:90%; /*900px*/
-	height: 95%;	
+	height: 600px;	
 	position: relative;
 }
 
@@ -122,7 +122,7 @@ img {
 /*--------------------------------------------Карты--------------------------------------------------*/
 
 #dealer1 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 15%;
@@ -130,7 +130,7 @@ img {
 }
 
 #dealer2 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 20%;
@@ -138,7 +138,7 @@ img {
 }
 
 #dealer3 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 25%;
@@ -146,7 +146,7 @@ img {
 }
 
 #dealer4 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 30%;
@@ -154,7 +154,7 @@ img {
 }
 
 #dealer5 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 35%;
@@ -162,7 +162,7 @@ img {
 }
 
 #dealer6 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 40%;
@@ -170,7 +170,7 @@ img {
 }
 
 #player1{
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 15%;
@@ -178,7 +178,7 @@ img {
 }
 
 #player2{
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 20%;
@@ -186,7 +186,7 @@ img {
 }
 
 #player3{
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 25%;
@@ -194,7 +194,7 @@ img {
 }
 
 #player4{
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 30%;
@@ -202,7 +202,7 @@ img {
 }
 
 #player5{
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 35%;
@@ -210,7 +210,7 @@ img {
 }
 
 #player6{
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 40%;
