@@ -44,7 +44,7 @@ img {
 
 #gameArea {
 	width: 100%;
-	height: 28%;
+	height: 38%;
 	position: absolute;
 	left: 90px;
 	top: 31%;
@@ -64,6 +64,7 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 45%;
+	margin-top: -15px;
 }
 
 /*------------------------------------------Кнопки------------------------------------------------*/
@@ -73,10 +74,11 @@ img {
 	width: 12%;
 	height: 50px;
 	position: absolute;
-	top: 47%;
+	top: 50%;
 	left: 15%;
 	cursor: pointer;
 	font-size: 0.9em;
+	margin-top: -25px;
 }
 
 #more {
