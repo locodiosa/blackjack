@@ -54,37 +54,30 @@ img {
 /*------------------------------------------Кнопки------------------------------------------------*/
 
 #newgame {
-	background-color:#222233; 
-	width: 12%;
-	height: 50px;
+	width: 150px;
 	position: absolute;
 	top: 50%;
 	left: 15%;
 	cursor: pointer;
-	font-size: 0.9em;
 	margin-top: -25px;
 }
 
 #more {
-	background-color:#002266; 
-	width: 10%;
+	width: 100px;
 	height: 30px;
 	position: absolute;
 	top: 10%;
 	left: 30%;
 	cursor: pointer;
-	font-size: 0.9em;
 }
 
 #stop {
-	background-color:#800000; 
-	width: 10%;
+	width: 100px;
 	height: 30px;
 	position: absolute;
 	bottom: 10%;
 	left: 30%;
 	cursor: pointer;
-	font-size: 0.9em;
 }
 
 .text {
