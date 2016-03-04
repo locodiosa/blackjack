@@ -232,10 +232,10 @@ img {
 	bottom:-250px; right: 0;
 	position: fixed; 
 	width: 320px;
-	-webkit-transition: bottom 1s ease-out 0.5s;
-	-moz-transition: bottom 1s ease-out 0.5s;
-	-o-transition: bottom 1s ease-out 0.5s;
-	transition: bottom 1s ease-out 0.5s;
+	-webkit-transition: bottom 1s ease-out 0.1s;
+	-moz-transition: bottom 1s ease-out 0.1s;
+	-o-transition: bottom 1s ease-out 0.1s;
+	transition: bottom 1s ease-out 0.1s;
 }
 
 #bender:hover {
