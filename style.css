@@ -58,7 +58,7 @@ img {
 /*------------------------------------------Кнопки------------------------------------------------*/
 
 #newgame {
-	width: 150px;
+	width: 120px;
 	position: absolute;
 	top: 50%;
 	left: 15%;
@@ -67,8 +67,7 @@ img {
 }
 
 #more {
-	width: 100px;
-	height: 30px;
+	width: 90px;
 	position: absolute;
 	top: 10%;
 	left: 30%;
@@ -76,8 +75,7 @@ img {
 }
 
 #stop {
-	width: 100px;
-	height: 30px;
+	width: 90px;
 	position: absolute;
 	bottom: 10%;
 	left: 30%;
