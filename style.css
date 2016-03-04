@@ -229,9 +229,9 @@ img {
 /*--------------------------------------Бендер-----------------------------------------------*/
 	
 #bender {
-	bottom:-40%; right: 0;
+	bottom:-250px; right: 0;
 	position: fixed; 
-	width: 30%;
+	width: 320px;
 	-webkit-transition: bottom 1s ease-out 0.5s;
 	-moz-transition: bottom 1s ease-out 0.5s;
 	-o-transition: bottom 1s ease-out 0.5s;
