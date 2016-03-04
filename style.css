@@ -1,10 +1,10 @@
 body, html {
 	background-color: #005000;
 	color: #ddd;
-	font: 3vmin Verdana;
+	font: 16px Verdana;
 	margin:0px;
 	padding:0px;
-	height: 100%
+	height: 100%;
 }
 
 div {
@@ -18,13 +18,15 @@ img {
 
 #container {
 	margin: 10px auto;
-	width:90%; /*900px*/
-	height: 90%;	
+	min-width:600px;
+	min-height: 500px;	
+	height: 95%;
 	position: relative;
 }
 
 #dealerArea {
-	width: 100%;
+	width: 90%;
+	min-height: 150px;
 	height: 30%;
 	position: absolute;
 	left: 90px;
@@ -32,7 +34,8 @@ img {
 }
 
 #playerArea {
-	width: 100%;
+	width: 90%;
+	min-height: 150px;
 	height: 30%;
 	position: absolute;
 	left: 90px;
@@ -44,11 +47,12 @@ img {
 }
 
 #gameArea {
-	width: 100%;
-	height: 38%;
+	width: 90%;
+	min-height: 180px;
+	height: 36%;
 	position: absolute;
 	left: 90px;
-	top: 31%;
+	top: 32%;
 }
 
 /*------------------------------------------Кнопки------------------------------------------------*/
