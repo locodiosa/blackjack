@@ -46,7 +46,10 @@ img {
 }
 
 #deckArea {
-	width: 90px;
+	width: 30%;
+	min-width: 90px;
+	position: relative;
+	left: 35%;
 }
 
 #gameArea {
@@ -126,7 +129,8 @@ img {
 /*--------------------------------------------Карты--------------------------------------------------*/
 
 #deck {
-	width: 90px;
+	width: 18%;
+	min-width: 90px;
 	position: absolute;
 	left: 50%;
 	margin-left: -45px;
