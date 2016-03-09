@@ -127,7 +127,8 @@ img {
 #deck {
 	width: 90px;
 	position: absolute;
-	top: 40%;
+	top: 50%;
+	margin-top: -55px;
 }
 
 #dealer1 {
