@@ -129,11 +129,11 @@ img {
 /*--------------------------------------------Карты--------------------------------------------------*/
 
 #deck {
-	width: 18%;
+	width: 80%;
 	min-width: 90px;
 	position: absolute;
 	left: 50%;
-	margin-left: -45px;
+	margin-left: -45%;
 }
 
 #dealer1 {
