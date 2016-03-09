@@ -127,9 +127,19 @@ img {
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
+
+@media handheld {
+	.card {
+		width: 70%;
+		min-width: 90px;
+		position: absolute;
+		left: 50%;
+		margin-left: -45%;
+	}
+}
+
 .card {
-	width: 70%;
-	min-width: 90px;
+	width: 90px;
 	position: absolute;
 	left: 50%;
 	margin-left: -45%;
