@@ -1,4 +1,4 @@
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) {
 
 body, html {
 	background-color: #005000;
@@ -9,9 +9,9 @@ body, html {
 	height: 100%;
 }
 
-/*div {
+div {
 	border: 1px solid #000;
-}*/
+}
 
 img {
 	width: 100%;
@@ -20,29 +20,29 @@ img {
 
 #container {
 	margin: 10px auto;
-	min-width:600px;
-	min-height: 450px;	
+	min-width:300px;
+	min-height: 300px;	
 	width: 95%;
 	height: 95%;
 	position: relative;
 }
 
 #dealerArea {
-	width: 90%;
-	min-height: 150px;
-	height: 30%;
+	width: 30%;
+	min-width: 95px;
+	height: 90%;
 	position: absolute;
-	left: 90px;
-	top: 1%;
+	right: 5px;
+	top: 95px;
 }
 
 #playerArea {
-	width: 90%;
-	min-height: 150px;
-	height: 30%;
+	width: 30%;
+	min-width: 95px;
+	height: 90%;
 	position: absolute;
-	left: 90px;
-	bottom: 1%;
+	left: 5px;
+	top: 95px;
 }
 
 #deckArea {
@@ -50,12 +50,12 @@ img {
 }
 
 #gameArea {
-	width: 90%;
-	min-height: 180px;
-	height: 36%;
+	min-width: 150px;
+	width: 30%;
+	height: 90%;
 	position: absolute;
-	left: 90px;
-	top: 32%;
+	left: 32%;
+	top: 95px;
 }
 
 /*------------------------------------------Кнопки------------------------------------------------*/
@@ -103,7 +103,6 @@ img {
 	width: 15%;
 	height: 13%;
 	position: absolute;
-	top: 50%;
 }
 
 .scoreItem {
@@ -114,14 +113,14 @@ img {
 }
 
 #game{
-	width: 50%;
+	width: 90%;
 	height: 30px;
 	font-size: 1rem;
 	color: #ffff00;
 	position: absolute;
-	top: 50%;
+	top: 95px;
 	left: 45%;
-	margin-top: -15px;
+	margin-left: -15px;
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
@@ -129,55 +128,61 @@ img {
 #deck {
 	width: 90px;
 	position: absolute;
-	top: 50%;
-	margin-top: -55px;
+	left: 50%;
+	margin-left: -45px;
 }
 
 #dealer1 {
 	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 15%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 1;
 }
 
 #dealer2 {
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 20%;
+	top: 18%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 2;
 }
 
 #dealer3 {
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 25%;
+	top: 26%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 3;
 }
 
 #dealer4 {
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 30%;
+	top: 34%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 4;
 }
 
 #dealer5 {
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 35%;
+	top: 42%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 5;
 }
 
 #dealer6 {
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 40%;
+	top: 50%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 6;
 }
 
@@ -185,47 +190,53 @@ img {
 	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 15%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 1;
 }
 
 #player2{
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 20%;
+	top: 18%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 2;
 }
 
 #player3{
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 25%;
+	top: 26%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 3;
 }
 
 #player4{
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 30%;
+	top: 34%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 4;
 }
 
 #player5{
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 35%;
+	top: 42%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 5;
 }
 
 #player6{
 	width: 90px;
 	position: absolute;
-	top: 10%;
-	left: 40%;
+	top: 50%;
+	left: 50%;
+	margin-left: -45px;
 	z-index: 6;
 }
 
