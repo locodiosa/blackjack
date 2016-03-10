@@ -103,8 +103,7 @@ img {
 
 /*------------------------------------------Надписи----------------------------------------------*/
 .score {
-	width: 15%;
-	height: 13%;
+	width: 100%;
 	position: absolute;
 }
 
@@ -134,7 +133,7 @@ img {
 		margin-left: -45%;
 	}
 
-@media only screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 768px) {
 	.card {
 		width: 70%;
 		min-width: 90px;
