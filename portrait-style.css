@@ -127,7 +127,14 @@ img {
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
-@media only screen and (max-device-width: 480px) {
+.card {
+		width: 90px;
+		position: absolute;
+		left: 50%;
+		margin-left: -45%;
+	}
+
+@media only screen and (max-device-width: 768px) {
 	.card {
 		width: 70%;
 		min-width: 90px;
@@ -136,16 +143,6 @@ img {
 		margin-left: -45%;
 	}
 }
-
-@media not handheld {
-	.card {
-		width: 90px;
-		position: absolute;
-		left: 50%;
-		margin-left: -45%;
-	}
-}
-
 
 #dealer1 {
 	top: 10%;
