@@ -127,7 +127,7 @@ img {
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
-@media handheld {
+@media only screen and (max-device-width: 480px) {
 	.card {
 		width: 70%;
 		min-width: 90px;
@@ -139,7 +139,7 @@ img {
 
 @media not handheld {
 	.card {
-		width: 30px;
+		width: 90px;
 		position: absolute;
 		left: 50%;
 		margin-left: -45%;
