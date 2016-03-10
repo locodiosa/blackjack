@@ -127,7 +127,6 @@ img {
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
-
 @media handheld {
 	.card {
 		width: 70%;
@@ -138,12 +137,15 @@ img {
 	}
 }
 
-.card {
-	width: 90px;
-	position: absolute;
-	left: 50%;
-	margin-left: -45%;
+@media not handheld {
+	.card {
+		width: 30px;
+		position: absolute;
+		left: 50%;
+		margin-left: -45%;
+	}
 }
+
 
 #dealer1 {
 	top: 10%;
