@@ -148,7 +148,7 @@ function getSum(hand) {
 function plays(){
   var audio = new Audio();
   audio.preload = 'auto';
-  audio.src = 'bender.mp3';
+  audio.src = 'js/bender.mp3';
   audio.play();
 }
 
