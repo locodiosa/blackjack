@@ -66,14 +66,6 @@ img {
 	margin: 20% auto;
 }
 
-@media screen and (max-device-width: 768px) {
-	#newgame {
-		width: 120px;
-		cursor: pointer;
-		margin: 80% auto;
-	}
-}
-
 #more {
 	width: 90px;
 	margin: 20% auto;
@@ -84,6 +76,22 @@ img {
 	width: 90px;
 	margin: 5% auto;
 	cursor: pointer;
+}
+
+@media screen and (max-device-width: 768px) {
+	#newgame {
+		width: 70%;
+		cursor: pointer;
+		margin: 80% auto;
+	}
+
+	#more {
+		width: 52%;
+	}
+
+	#stop {
+		width: 52%;
+	}
 }
 
 .text {
