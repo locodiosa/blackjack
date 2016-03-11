@@ -94,19 +94,6 @@ img {
 	}
 }
 
-.text {
-	width: 100%;
-	height: 100%;
-	display: table;
-}
-
-.text p {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	font-size: 0.9em;
-}
-
 /*------------------------------------------Надписи----------------------------------------------*/
 .score {
 	width: 100%;
@@ -127,6 +114,17 @@ img {
 	margin: 20% auto;
 	text-align: center;
 }
+
+@media screen and (max-device-width: 768px) {
+	.score {
+		font-size: 2rem;
+	}
+
+	#game{
+		font-size: 2rem;
+	}
+}
+
 
 /*--------------------------------------------Карты--------------------------------------------------*/
 .card {
