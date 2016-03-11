@@ -30,35 +30,33 @@ img {
 #deckArea {
 	width: 30%;
 	min-width: 90px;
-	position: absolute;
-	left: 35%;
+	margin: 0 auto;
+	position: relative;
 }
 
 #dealerArea {
 	width: 30%;
 	min-width: 95px;
 	height: 90%;
-	position: absolute;
-	right: 1%;
-	top: 120px;
+	float: right;
+	margin-top: 120px;
+	position: relative;
 }
 
 #playerArea {
 	width: 30%;
 	min-width: 95px;
 	height: 90%;
-	position: absolute;
-	left: 1%;
-	top: 120px;
+	float: left;
+	margin-top: 120px;
+	position: relative;
 }
 
 #gameArea {
 	min-width: 130px;
 	width: 30%;
 	height: 90%;
-	position: absolute;
-	left: 32%;
-	top: 120px;
+	margin: 120px auto;
 }
 
 /*------------------------------------------Кнопки------------------------------------------------*/
@@ -120,7 +118,7 @@ img {
 	width: 90px;
 	position: absolute;
 	left: 50%;
-	margin-left: -45%;
+	margin-left: -45px;
 }
 
 @media screen and (max-device-width: 768px) {
@@ -129,7 +127,7 @@ img {
 		min-width: 90px;
 		position: absolute;
 		left: 50%;
-		margin-left: -45%;
+		margin-left: -35%;
 	}
 }
 
