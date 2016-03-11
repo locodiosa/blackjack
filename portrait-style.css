@@ -83,8 +83,6 @@ img {
 @media screen and (max-device-width: 768px) {
 	#newgame {
 		width: 70%;
-		cursor: pointer;
-		margin: 80% auto;
 	}
 
 	#more {
