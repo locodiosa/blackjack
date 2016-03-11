@@ -146,7 +146,10 @@ function getSum(hand) {
 }
 
 function plays(){
-    document.getElementById('sound').outerHTML='<embed id="sound" src="js/bender.mp3" autostart="true" loop="false" width="0" height="0" hidden="true"></embed>';
+  var audio = new Audio();
+  audio.preload = 'auto';
+  audio.src = 'bender.mp3';
+  audio.play();
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
