@@ -1,0 +1,222 @@
+@media screen and (orientation: portrait) {
+
+body, html {
+	background-color: #005000;
+	color: #ddd;
+	font: 16px Verdana;
+	margin:0px;
+	padding:0px;
+	height: 100%;
+}
+
+/*div {
+	border: 1px solid #000;
+}*/
+
+img {
+	width: 100%;
+}
+/*-----------------------------------------Контейнеры---------------------------------------*/
+
+#container {
+	margin: 10px auto;
+	min-width:350px;
+	min-height: 350px;	
+	width: 95%;
+	height: 95%;
+	position: relative;
+}
+
+#deckArea {
+	width: 30%;
+	min-width: 90px;
+	height: 2px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#dealerArea {
+	width: 30%;
+	min-width: 95px;
+	height: 90%;
+	float: right;
+	margin-top: 120px;
+	position: relative;
+}
+
+#playerArea {
+	width: 30%;
+	min-width: 95px;
+	height: 90%;
+	float: left;
+	margin-top: 120px;
+	position: relative;
+}
+
+#gameArea {
+	min-width: 130px;
+	width: 30%;
+	height: 90%;
+	margin: 120px auto;
+}
+
+/*------------------------------------------Кнопки------------------------------------------------*/
+#newgame {
+	width: 120px;
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 30% 0 0 0;
+}
+
+#more {
+	width: 90px;
+	margin: 20% auto;
+	cursor: pointer;
+}
+
+#stop {
+	width: 90px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+@media screen and (max-device-width: 768px) {
+	#newgame {
+		width: 70%;
+		padding: 80% 0 0 0;
+	}
+
+	#more {
+		width: 52%;
+	}
+
+	#stop {
+		width: 52%;
+	}
+}
+
+/*------------------------------------------Надписи----------------------------------------------*/
+.score {
+	width: 100%;
+	position: absolute;
+}
+
+.scoreItem {
+	display: inline;
+	vertical-align: top;
+	float: left;
+	height: 100%;
+}
+
+#game{
+	width: 98%;
+	font-size: 1rem;
+	color: #ffff00;
+	margin: 30% auto;
+	text-align: center;
+}
+
+@media screen and (max-device-width: 768px) {
+	.score {
+		font-size: 2rem;
+	}
+
+	#game{
+		font-size: 2rem;
+	}
+}
+
+/*--------------------------------------------Карты--------------------------------------------------*/
+.card {
+	width: 90px;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+}
+
+@media screen and (max-device-width: 768px) {
+	.card {
+		width: 70%;
+		min-width: 90px;
+		position: absolute;
+		left: 50%;
+		margin-left: -35%;
+	}
+}
+
+#dealer1 {
+	top: 10%;
+	z-index: 1;
+}
+
+#dealer2 {
+	top: 18%;
+	z-index: 2;
+}
+
+#dealer3 {
+	top: 26%;
+	z-index: 3;
+}
+
+#dealer4 {
+	top: 34%;
+	z-index: 4;
+}
+
+#dealer5 {
+	top: 42%;
+	z-index: 5;
+}
+
+#dealer6 {
+	top: 50%;
+	z-index: 6;
+}
+
+#player1{
+   	top: 10%;
+	z-index: 1;
+}
+
+#player2{
+	top: 18%;
+	z-index: 2;
+}
+
+#player3{
+	top: 26%;
+	z-index: 3;
+}
+
+#player4{
+	top: 34%;
+	z-index: 4;
+}
+
+#player5{
+	top: 42%;
+	z-index: 5;
+}
+
+#player6{
+	top: 50%;
+	z-index: 6;
+}
+
+/*--------------------------------------Бендер-----------------------------------------------*/
+	
+#bender {
+	bottom:-250px; right: 0;
+	position: fixed; 
+	width: 320px;
+	-webkit-transition: bottom 1s ease-out 0.1s;
+	-moz-transition: bottom 1s ease-out 0.1s;
+	-o-transition: bottom 1s ease-out 0.1s;
+	transition: bottom 1s ease-out 0.1s;
+}
+
+#bender:hover {
+	bottom: 0;
+}
+}

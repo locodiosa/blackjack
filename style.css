@@ -1,76 +1,84 @@
+@media screen and (orientation: landscape) {
+
 body, html {
 	background-color: #005000;
 	color: #ddd;
-	font: 3vmin Verdana;
+	font: 16px Verdana;
 	margin:0px;
 	padding:0px;
-	height: 100%
+	height: 100%;
 }
-
-/*div {
-	border: 1px solid #000;
-}*/
 
 img {
 	width: 100%;
 }
+/*-----------------------------------------Контейнеры---------------------------------------*/
 
 #container {
 	margin: 10px auto;
-	width:90%; /*900px*/
-	height: 95%;	
+	min-width:600px;
+	min-height: 450px;	
+	width: 95%;
+	height: 95%;
 	position: relative;
 }
 
-#deck {
-	width: 10%;
+#dealerArea {
+	width: 90%;
+	min-height: 150px;
+	height: 30%;
 	position: absolute;
-	top: 40%;
+	left: 90px;
+	top: 1%;
 }
 
-#game{
-	width: 50%;
-	height: 5%;
-	font-size: 1rem;
-	color: #ffff00;
+#playerArea {
+	width: 90%;
+	min-height: 150px;
+	height: 30%;
 	position: absolute;
-	top: 50%;
-	left: 45%;
+	left: 90px;
+	bottom: 1%;
+}
+
+#deckArea {
+	width: 90px;
+}
+
+#gameArea {
+	width: 90%;
+	min-height: 180px;
+	height: 36%;
+	position: absolute;
+	left: 90px;
+	top: 32%;
 }
 
 /*------------------------------------------Кнопки------------------------------------------------*/
 
 #newgame {
-	background-color:#222233; 
-	width: 12%;
-	height: 10%;
+	width: 120px;
 	position: absolute;
-	top: 47%;
-	left: 15%;
+	top: 50%;
+	left: 10%;
 	cursor: pointer;
-	font-size: 0.9em;
+	margin-top: -25px;
 }
 
 #more {
-	background-color:#002266; 
-	width: 10%;
-	height: 5%;
+	width: 90px;
 	position: absolute;
-	top: 45%;
+	top: 10%;
 	left: 30%;
 	cursor: pointer;
-	font-size: 0.9em;
 }
 
 #stop {
-	background-color:#800000; 
-	width: 10%;
-	height: 5%;
+	width: 90px;
 	position: absolute;
-	top: 55%;
+	bottom: 10%;
 	left: 30%;
 	cursor: pointer;
-	font-size: 0.9em;
 }
 
 .text {
@@ -87,150 +95,149 @@ img {
 }
 
 /*------------------------------------------Надписи----------------------------------------------*/
-
-#dealerName {
-	width: 8%;
-	height: 4%;
+.score {
+	width: 15%;
+	height: 13%;
 	position: absolute;
-	top: 20%;
-	left: 10%;
+	top: 50%;
 }
 
-#playerName {
-	width: 8%;
-	height: 4%;
-	position: absolute;
-	top: 80%;
-	left: 10%;
+.scoreItem {
+	display: inline;
+	vertical-align: top;
+	float: left;
+	height: 100%;
 }
 
-#countdealer {
-	width: 8%;
-	height: 4%;
+#game{
+	width: 50%;
+	height: 30px;
+	font-size: 1rem;
+	color: #ffff00;
 	position: absolute;
-	top: 20%;
-	left: 19%;
-}
-
-#countplayer{
-	width: 8%;
-	height: 4%;
-	position: absolute;
-	top: 80%;
-	left: 19%;
+	top: 50%;
+	left: 45%;
+	margin-top: -15px;
 }
 
 /*--------------------------------------------Карты--------------------------------------------------*/
 
+#deck {
+	width: 90px;
+	position: absolute;
+	top: 50%;
+	margin-top: -55px;
+}
+
 #dealer1 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 25%;
+	left: 15%;
 	z-index: 1;
 }
 
 #dealer2 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 30%;
+	left: 20%;
 	z-index: 2;
 }
 
 #dealer3 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 35%;
+	left: 25%;
 	z-index: 3;
 }
 
 #dealer4 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 40%;
+	left: 30%;
 	z-index: 4;
 }
 
 #dealer5 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 45%;
+	left: 35%;
 	z-index: 5;
 }
 
 #dealer6 {
-	width: 10%;
+	width: 90px;
 	position: absolute;
 	top: 10%;
-	left: 50%;
+	left: 40%;
 	z-index: 6;
 }
 
 #player1{
-	width: 10%;
+	width: 90px;
 	position: absolute;
-	top: 70%;
-	left: 25%;
+	top: 10%;
+	left: 15%;
 	z-index: 1;
 }
 
 #player2{
-	width: 10%;
+	width: 90px;
 	position: absolute;
-	top: 70%;
-	left: 30%;
+	top: 10%;
+	left: 20%;
 	z-index: 2;
 }
 
 #player3{
-	width: 10%;
+	width: 90px;
 	position: absolute;
-	top: 70%;
-	left: 35%;
+	top: 10%;
+	left: 25%;
 	z-index: 3;
 }
 
 #player4{
-	width: 10%;
+	width: 90px;
 	position: absolute;
-	top: 70%;
-	left: 40%;
+	top: 10%;
+	left: 30%;
 	z-index: 4;
 }
 
 #player5{
-	width: 10%;
+	width: 90px;
 	position: absolute;
-	top: 70%;
-	left: 45%;
+	top: 10%;
+	left: 35%;
 	z-index: 5;
 }
 
 #player6{
-	width: 10%;
+	width: 90px;
 	position: absolute;
-	top: 70%;
-	left: 50%;
+	top: 10%;
+	left: 40%;
 	z-index: 6;
 }
 
+/*--------------------------------------Бендер-----------------------------------------------*/
 	
 #bender {
-	bottom:-40%; right: 0;
+	bottom:-250px; right: 0;
 	position: fixed; 
-	width: 30%;
-	-webkit-transition: bottom 1s ease-out 0.5s;
-	-moz-transition: bottom 1s ease-out 0.5s;
-	-o-transition: bottom 1s ease-out 0.5s;
-	transition: bottom 1s ease-out 0.5s;
+	width: 320px;
+	-webkit-transition: bottom 1s ease-out 0.1s;
+	-moz-transition: bottom 1s ease-out 0.1s;
+	-o-transition: bottom 1s ease-out 0.1s;
+	transition: bottom 1s ease-out 0.1s;
 }
 
 #bender:hover {
 	bottom: 0;
 }
-
-
+}

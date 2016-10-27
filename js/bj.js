@@ -56,7 +56,7 @@ function doStop() {
 	
 		
 function count(idName, handName) {
-	document.getElementById(idName).innerHTML = "\" "+ getSum(handName) + "\" ";
+	document.getElementById(idName).innerHTML = "\"" + getSum(handName) + "\"";
 }
 
 function result() {
@@ -143,6 +143,13 @@ function getSum(hand) {
 	}
 
 	return sum;
+}
+
+function plays(){
+  var audio = new Audio();
+  audio.preload = 'auto';
+  audio.src = 'js/bender.mp3';
+  audio.play();
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
