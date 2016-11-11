@@ -145,10 +145,10 @@ function getSum(hand) {
 	return sum;
 }
 
-function plays(){
+function sounds(soundName){
   var audio = new Audio();
   audio.preload = 'auto';
-  audio.src = 'js/bender.mp3';
+  audio.src = "sounds/" + soundName + ".mp3";
   audio.play();
 }
 
