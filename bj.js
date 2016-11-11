@@ -40,14 +40,18 @@ function doStop() {
 
 		if (getSum(dealerHand) == 21) {
 			document.getElementById("game").innerHTML = "Сожалеем, у дилера Black Jack.  :( ";
+			sounds("fail");
 		} else if (getSum(dealerHand) > 21) {
 			document.getElementById("game").innerHTML = "У дилера перебор!  :D";
+			sounds("win");
 		} else if (getSum(playerHand) == getSum(dealerHand)) {
 			document.getElementById("game").innerHTML = "Ничья.";
 		} else if (getSum(playerHand) > getSum(dealerHand)) {
 			document.getElementById("game").innerHTML = "Поздравляем, Вы выиграли!  :)";
+			sounds("win");
 		} else {
 			document.getElementById("game").innerHTML = "Вы проиграли...  :( ";
+			sounds("fail");
 		}
 
 		count("countdealer", dealerHand);
@@ -63,8 +67,10 @@ function result() {
 	var countplayer = getSum(playerHand);
 	if (countplayer == 21) {
 		document.getElementById("game").innerHTML = "У Вас Black Jack!  :D";
+		sounds("win");
 	} else if (countplayer > 21) {
 		document.getElementById("game").innerHTML = "Перебор! :(";
+		sounds("fail");
 	} else {
 		document.getElementById("game").innerHTML = " ";	
 	}
